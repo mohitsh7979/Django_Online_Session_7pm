@@ -21,5 +21,7 @@ from myapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index),
-    path('form/',views.getForm)
+    path('form/',views.getForm),
+    path('delete/<int:id>/',views.deletehandle),
+    path('update/<int:id>/',views.updatehandle)
 ]
