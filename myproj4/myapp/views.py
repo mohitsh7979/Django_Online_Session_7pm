@@ -38,3 +38,4 @@ def updatehandle(request,id):
         data = Student.objects.get(id=id)
    
     return render(request,'Update.html',{'data':data})
+

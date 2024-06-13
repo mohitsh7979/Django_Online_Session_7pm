@@ -1,0 +1,15 @@
+{% extends "Home.html" %} 
+{% block outlet %}
+<div class="container mt-5 w-75">
+    <h1 class="border-bottom border-dark p-1">Register Form</h1>
+  <form class="row g-3" action = "" method = "post">
+    {% csrf_token %}
+    <div class="col-md-6">
+     {{data_form.as_p}}
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </form>
+</div>
+{% endblock outlet %}
